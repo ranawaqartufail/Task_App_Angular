@@ -1,0 +1,15 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-taskmanager-staging-95706-authRole",
+      "UnauthRoleArn": "arn:aws:iam::849810512551:role/amplify-taskmanager-staging-95706-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::849810512551:role/amplify-taskmanager-staging-95706-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-taskmanager-staging-95706-deployment",
+      "UnauthRoleName": "amplify-taskmanager-staging-95706-unauthRole",
+      "StackName": "amplify-taskmanager-staging-95706",
+      "StackId": "arn:aws:cloudformation:us-east-1:849810512551:stack/amplify-taskmanager-staging-95706/7d3c88c0-75bd-11eb-9ca3-0a34514375d1",
+      "AmplifyAppId": "d3n44z7y5mp4eg"
+    }
+  }
+}

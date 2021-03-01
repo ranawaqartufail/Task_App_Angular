@@ -1,0 +1,48 @@
+<!-- <nz-page-header class="site-page-header"  nzTitle="Task" >
+</nz-page-header> -->
+<nz-modal [(nzVisible)]="isVisible" nzTitle="Create Task" (nzOnCancel)="handleCancel()" (nzOnOk)="handleOk()">
+  <ng-container *nzModalContent>
+    <form nz-form [formGroup]="createForm" (ngSubmit)="onCreate(createForm.value)">
+      <nz-form-item>
+        <nz-form-label [nzSpan]="6" nzFor="name">name</nz-form-label>
+        <nz-form-control [nzSpan]="14">
+          <input nz-input formControlName="name" id="name">
+        </nz-form-control>
+      </nz-form-item>
+      <nz-form-item>
+        <nz-form-label [nzSpan]="6" nzFor="projectID">projectID</nz-form-label>
+        <nz-form-control [nzSpan]="14">
+          <input nz-input formControlName="projectID" id="projectID">
+        </nz-form-control>
+      </nz-form-item>
+      <nz-form-item>
+        <nz-form-control>
+          <button nz-button [nzType]="'primary'">submit</button>
+        </nz-form-control>
+      </nz-form-item>
+    </form>
+  </ng-container>
+</nz-modal>
+<nz-table #basicTable [nzData]="datas"  [nzPageSize]="4">
+  <thead>
+    <tr>
+      <th>Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let data of basicTable.data">
+      <td>{{ data.name }}</td>
+    </tr>
+  </tbody>
+  <p></p>
+  <button nz-button nzType="primary" (click)="showModal()"><i nz-icon nzType="plus-circle"></i></button>
+</nz-table>
+<!-- <nz-upload
+nzAction="https://www.mocky.io/v2/5cc8019d300000980a055e76"
+[nzHeaders]="{ authorization: 'authorization-text' }"
+(nzChange)="onFileChange($event)"
+>
+<button nz-button><i nz-icon nzType="upload"></i>Click to Upload</button>
+</nz-upload> -->
+
+<input type="file" (change)="onFileChange($event)" multiple="false"/>

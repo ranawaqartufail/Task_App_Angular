@@ -1,0 +1,133 @@
+# this is an auto generated file. This will be overwritten
+mutation CreateTask(
+  $input: CreateTaskInput!
+  $condition: ModelTaskConditionInput
+) {
+  createTask(input: $input, condition: $condition) {
+    id
+    name
+    projectID
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+    Project {
+      id
+      name
+      description
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+  }
+}
+mutation UpdateTask(
+  $input: UpdateTaskInput!
+  $condition: ModelTaskConditionInput
+) {
+  updateTask(input: $input, condition: $condition) {
+    id
+    name
+    projectID
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+    Project {
+      id
+      name
+      description
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+  }
+}
+mutation DeleteTask(
+  $input: DeleteTaskInput!
+  $condition: ModelTaskConditionInput
+) {
+  deleteTask(input: $input, condition: $condition) {
+    id
+    name
+    projectID
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+    Project {
+      id
+      name
+      description
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+  }
+}
+mutation CreateProject(
+  $input: CreateProjectInput!
+  $condition: ModelProjectConditionInput
+) {
+  createProject(input: $input, condition: $condition) {
+    id
+    name
+    description
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+    Tasks {
+      nextToken
+      startedAt
+    }
+  }
+}
+mutation UpdateProject(
+  $input: UpdateProjectInput!
+  $condition: ModelProjectConditionInput
+) {
+  updateProject(input: $input, condition: $condition) {
+    id
+    name
+    description
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+    Tasks {
+      nextToken
+      startedAt
+    }
+  }
+}
+mutation DeleteProject(
+  $input: DeleteProjectInput!
+  $condition: ModelProjectConditionInput
+) {
+  deleteProject(input: $input, condition: $condition) {
+    id
+    name
+    description
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+    Tasks {
+      nextToken
+      startedAt
+    }
+  }
+}
